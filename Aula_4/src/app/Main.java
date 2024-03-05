@@ -36,9 +36,9 @@ public class Main {
 					+ novoBanco.getBanco()
 					 );
 			break;
-		}
+			
 	
-		
+	case 2:
 		Nome = mensagem.solicitarEntrada("Digite o seu nome");
 		CPF = mensagem.solicitarEntrada("Digite o seu CPF");
 		Celular = mensagem.solicitarEntrada("Digite o seu celular");
@@ -46,12 +46,17 @@ public class Main {
 	    Senha = mensagem.solicitarEntrada("Digite a Senha");
 	    Usuario usuario = new Usuario(Nome,CPF,Celular,Email,Senha);
 	    mensagem.mostrarMensagemDeSucesso(usuario.getUsuario());
-	    opcao = "ok";
-	 	    
-	} while (opcao == "ok");
+	break;
 	
+	
+	case 3:
+		  System.exit(0);
+	   break; 
 	}
 	
 	
+;     } while (opcaoNum == 3);
+	
+	}	
 
 }
